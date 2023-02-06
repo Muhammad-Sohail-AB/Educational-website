@@ -1,0 +1,72 @@
+/* todo: this file was created to get help while adding media q */
+
+.team{
+    /* border: 5px solid deepskyblue; */
+    background: var(--bg1-color);
+    box-shadow: inset 0 0 48px rgba(0,0,0,0.5);
+}
+.team__container{
+    /* border: 5px solid deeppink; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+.team__member{
+    padding: 2rem;
+    border-radius: 1rem;
+    background: var(--bg2-color);
+    border: 1px solid transparent;
+    /* border: 2px solid black; */
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+
+}
+.team__member:hover{
+    background: transparent;
+    border-color: var(--primary-color);
+}
+.member__image img{
+    border-radius: 1rem;
+    filter: saturate(0);
+    transition: var(--transition);
+}
+.team__member:hover .member__image img{
+    filter: saturate(1);
+    
+}
+.member__info{
+    /* border: 1px solid gray; */
+    margin-top: 1rem;
+    text-align: center;
+}
+.member__info h4{
+    margin-bottom: 0;
+}
+.member__info p{
+    margin-bottom: 0;
+    font-weight: 100;
+    text-transform: capitalize;
+    columns: var(--light-color);
+}
+.member__socials{
+    /* border: 2px solid palegreen; */
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background: var(--primary-color);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem 0  ;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -32px 0px 32px rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+.team__member:hover .member__socials{
+    right: 0%;
+}
+
+

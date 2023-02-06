@@ -1,0 +1,250 @@
+nav{
+    border: none;
+    /* border: 2px solid red; */
+}
+/*! @@@@@@@@@@@@@@@@@@@ project stylings starts here @@@@@@@@@@@@@@@@@ */
+/*! @@@@@@@@@@@@@@@@@@@ project stylings starts here @@@@@@@@@@@@@@@@@ */
+/*! @@@@@@@@@@@@@@@@@@@ project stylings starts here @@@@@@@@@@@@@@@@@ */
+/*! @@@@@@@@@@@@@@@@@@@ project stylings starts here @@@@@@@@@@@@@@@@@ */
+.projects{
+    /* border: 5px solid red; */
+    position: relative;
+    top: 5rem;
+    margin-bottom: 10rem;
+   
+}
+.projects h1{
+  text-align: left;
+}
+.projects__container{
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns:1fr 1.5fr;
+    gap: 2rem;
+}
+.projects__left{
+    /* border: 2px solid red; */
+    align-self: center;
+}
+.projects__right{
+    /* border: 2px solid red; */
+    display: grid;
+   grid-template-columns: 1fr;
+   gap: 2rem;
+}
+.projectsRight__top{
+    border: none;
+/* border: 2px solid green; */
+}
+.projectsRight__top p{
+margin: 0 0;
+margin-top: 3rem;
+}
+.projectsRight__bottom{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 2rem;
+}
+.project{
+    /* border: 2px solid rosybrown; */
+    background: var(--bg1-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+    border-radius: 1.6rem;
+    transition: var(--transition);
+}
+.project:hover{
+    background: var(--bg2-color);
+    box-shadow: 0 48px 48px rgba(0, 0, 0, 0.3);
+}
+.project p{
+    margin-bottom:  0;
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+.project i{
+    display: inline-block;
+    padding: 2rem;
+    background: var(--danger-color);
+    border-radius: 1rem;
+}
+.projectsRight__bottom :nth-child(2) i{
+    background: var(--success-color);
+    padding: 1.5rem;
+}
+.projectsRight__bottom :nth-child(3) i{
+    background: var(--primary-color);
+    padding: 1.5rem;
+}
+/*! @@@@@@@@@@@@@@@@@@@ team section  starts here @@@@@@@@@@@@@@@@@ */
+/*! @@@@@@@@@@@@@@@@@@@ team section  starts here @@@@@@@@@@@@@@@@@ */
+/*! @@@@@@@@@@@@@@@@@@@ team section  starts here @@@@@@@@@@@@@@@@@ */
+/*! @@@@@@@@@@@@@@@@@@@ team section  starts here @@@@@@@@@@@@@@@@@ */
+
+.team{
+    /* border: 5px solid deepskyblue; */
+    background: var(--bg1-color);
+    box-shadow: inset 0 0 48px rgba(0,0,0,0.5);
+}
+.team__container{
+    /* border: 5px solid deeppink; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+.team__member{
+    padding: 2rem;
+    border-radius: 1rem;
+    background: var(--bg2-color);
+    border: 1px solid transparent;
+    /* border: 2px solid black; */
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+
+}
+.team__member:hover{
+    background: transparent;
+    border-color: var(--primary-color);
+}
+.member__image img{
+    border-radius: 1rem;
+    filter: saturate(0);
+    transition: var(--transition);
+}
+.team__member:hover .member__image img{
+    filter: saturate(1);
+    
+}
+.member__info{
+    /* border: 1px solid gray; */
+    margin-top: 1rem;
+    text-align: center;
+}
+.member__info h4{
+    margin-bottom: 0;
+}
+.member__info p{
+    margin-bottom: 0;
+    font-weight: 100;
+    text-transform: capitalize;
+    columns: var(--light-color);
+}
+.member__socials{
+    /* border: 2px solid palegreen; */
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background: var(--primary-color);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem 0  ;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -32px 0px 32px rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+.team__member:hover .member__socials{
+    right: 0%;
+}
+
+
+
+/* !@@@@@@@@@@@@@@@@@@@@@ Adding the media quries @@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@ Adding the media quries @@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@ Adding the media quries @@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@ Adding the media quries @@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@ Adding the media quries @@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@ Adding the media quries @@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@ Adding the media quries @@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@ Adding the media quries @@@@@@@@@@@@@@@@@@@@@@@@ */
+ 
+
+
+ /* * @@@@@@@@@@@@@@@@ Tablet version @@@@@@@@@@@@@@@@@@@ */
+ /* * @@@@@@@@@@@@@@@@ Tablet version @@@@@@@@@@@@@@@@@@@ */
+ /* * @@@@@@@@@@@@@@@@ Tablet version @@@@@@@@@@@@@@@@@@@ */
+ /* * @@@@@@@@@@@@@@@@ Tablet version @@@@@@@@@@@@@@@@@@@ */
+
+
+
+@media screen  and (max-width:1024px){
+    /* @@@@@@@@@@@@@@@@@ projects @@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@ projects @@@@@@@@@@@@@@@@ */
+    .projects{
+        position: relative;
+        top: 1rem;
+        margin-bottom: 1rem;      
+    }
+
+    .projects__container{
+        grid-template-columns:1fr;
+        gap: 2rem;
+    }
+    .projectsRight__top p{
+       
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+        }
+    .projects__left {
+        align-self:center;
+        justify-self: center;
+        width: 70%;
+    }
+
+ /* @@@@@@@@@@@@@@@@@ meet our team @@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@ meet our team @@@@@@@@@@@@@@@@ */
+
+.team__container{
+    grid-template-columns: repeat(3,1fr);
+}
+   }
+
+/* * @@@@@@@@@@@@@@@@@@@@@@@@@@@ tablet version 2 @@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* * @@@@@@@@@@@@@@@@@@@@@@@@@@@ tablet version 2 @@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* * @@@@@@@@@@@@@@@@@@@@@@@@@@@ tablet version 2 @@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* * @@@@@@@@@@@@@@@@@@@@@@@@@@@ tablet version 2 @@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+@media screen and (max-width:768px){
+/* @@@@@@@@@@@@@@@@@ meet our team @@@@@@@@@@@@@@@@ */
+
+.team__container{
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.team__member{
+    padding: 1rem 2rem;
+}
+   }
+
+/* * @@@@@@@@@@@@@@@@@@@@@@@@@@@ mobile version  @@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* * @@@@@@@@@@@@@@@@@@@@@@@@@@@ mobile version  @@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* * @@@@@@@@@@@@@@@@@@@@@@@@@@@ mobile version  @@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* * @@@@@@@@@@@@@@@@@@@@@@@@@@@ mobile version  @@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+@media screen and (max-width:600px){
+    .projectsRight__top{
+        text-align: justify;
+    }
+    .projectsRight__top h1{
+        text-align: center;
+    }
+    .projectsRight__bottom{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        }   
+/* @@@@@@@@@@@@@@@@@ meet our team @@@@@@@@@@@@@@@@ */
+.team__container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+}

@@ -1,0 +1,78 @@
+nav{
+    border: none;
+    /* border: 5px solid red; */
+}
+
+
+/*! @@@@@@@@@@@@@@@@@@@@@@@@@ courses section starts here @@@@@@@@@@@@@@@@@@@ */
+.courses{
+    /* border: 5px solid red; */ 
+    position:relative;
+    top: 5rem;
+    margin-top: 0rem;
+    margin-bottom: 5rem;
+}
+
+.courses__container{
+    /* border: 3px solid green; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.course__item{
+    background: var(--bg1-color);
+    margin: 1rem;
+    border: 1px solid transparent;
+    /* border: 2px solid red; */
+    text-align: center;
+    transition: var(--transition);
+ 
+}
+.course__item:hover{
+    background: transparent;
+   border-color: var(--primary-color);
+   box-shadow: 0 48px 48px rgba(0, 0, 0, 0.3);
+}
+.course__item h4,p{
+    margin: 0 0 2rem 0;
+  
+}
+.course__item h4{
+    text-transform: capitalize;
+   
+}
+.courseItem__bottom{
+    padding:  2rem;
+}
+
+/* * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Tablet version @@@@@@@@@@@@@@@@@@@@@@@ */
+/* * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Tablet version @@@@@@@@@@@@@@@@@@@@@@@ */
+/* * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Tablet version @@@@@@@@@@@@@@@@@@@@@@@ */
+/* * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Tablet version @@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+@media screen and (max-width:1024px){
+      .courses__container{
+          grid-template-columns: repeat(2,1fr);
+          gap: 2rem;
+      }
+}
+
+/* * @@@@@@@@@@@@@@@@@@@@@@@@@@@@ Tablet version 2 @@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+@media screen and (max-width:768px){
+    .courses__container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 0.5rem;
+    }
+}
+
+/* * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile version @@@@@@@@@@@@@@@@@@@@@@@@ */
+
+@media screen and (max-width:600px){
+    .courses__container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

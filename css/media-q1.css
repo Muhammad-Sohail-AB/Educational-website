@@ -1,0 +1,106 @@
+/* todo: this file was created to get help while adding media q */
+
+
+.contact{
+    border: 5px solid greenyellow;
+    padding-bottom: 0;
+}
+.contact__container{
+    border: 5px solid red;
+    display: grid;
+    grid-template-columns: 35% 60%;
+    gap: 5rem;
+    background: var(--bg1-color);
+    height: 47rem;
+    margin: 8rem auto 10rem;
+    border-radius: 1rem;
+    padding: 5rem;
+   
+}
+
+/* ! contact aside starts here */
+
+.contact__aside{
+    /* border: 2px solid greenyellow; */
+    background: var(--primary-color);  
+    padding:3rem 4rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    position: relative;
+    bottom: 11rem;
+}
+.aside__image{
+    /* border: 2px solid red; */
+    justify-self: center;
+    width: 12rem;
+}
+.aside__info{
+    border: none;
+    /* border: 2px solid green; */
+}
+.aside__info h2{
+    text-align: left;
+    margin-bottom: 0;
+}
+.aside__info p{
+   margin-top: 1rem;
+    margin-bottom: 0;
+}
+.contact__details{
+    /* border: 2px solid deeppink; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contact__details li{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.contact__details h6{
+    margin: 0;
+    text-transform: lowercase;
+}
+.contact__details span{
+    display: inline-block;
+    background: var(--white-color);
+    color: var(--bg1-color);
+    padding:1.2rem 1.3rem;
+    border-radius: 50%;
+    transition: var(--transition);
+    display: grid;
+    place-items: center;
+    font-size: 1.4rem;
+    transition: var(--transition);
+}
+.contact__details span.gmail{
+    padding: 1.2rem 1.1rem;
+}
+.contact__details span:hover{
+    background: var(--bg1-color);
+    color: var(--white-color);
+}
+.contact__socials{
+    /* border: 2px solid darkorange; */
+    display: flex;
+    gap: 1rem;
+}
+.contact__socials a{
+    display: inline-block;
+    background: var(--bg1-color);
+    font-size: 1.4rem;
+    padding: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+}
+.contact__socials a.facebook{
+ padding: 1.2rem 1.39rem;
+}
+.contact__socials a:hover{
+    background: transparent;
+}

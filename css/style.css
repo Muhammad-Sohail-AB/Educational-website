@@ -1,0 +1,643 @@
+
+/*! @@@@@@@@@@@@@@@@@@@ navigation bar starts here @@@@@@@@@@@@@@@@@@@@@@@@*/
+/*! @@@@@@@@@@@@@@@@@@@ navigation bar starts here @@@@@@@@@@@@@@@@@@@@@@@@*/
+/*! @@@@@@@@@@@@@@@@@@@ navigation bar starts here @@@@@@@@@@@@@@@@@@@@@@@@*/
+/*! @@@@@@@@@@@@@@@@@@@ navigation bar starts here @@@@@@@@@@@@@@@@@@@@@@@@*/
+
+nav{
+    /* border: 5px solid greenyellow; */
+    height: 8rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 11;
+ }
+ /*todo: scroll event on Nav */
+ .window-scroll{
+     background: var(--primary-color);
+     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    
+ }
+ .nav__container{
+     /* border: 2px solid red; */
+     display: flex;
+     height: 100%;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .nav__container button{
+     display: none;
+ }
+ .nav__menu{
+     display: flex;
+     align-items: center;
+     gap: 5rem;
+ }
+ .nav__menu a{
+     transition: all;
+ }
+ .nav__menu a:hover{
+    color: var(--bg2-color);
+ }
+ 
+ 
+ /* ! @@@@@@@@@@@@@@@@@@@@@ header/ hero section styling @@@@@@@@@@@@@@@@@ */
+ /* ! @@@@@@@@@@@@@@@@@@@@@ header/ hero section styling @@@@@@@@@@@@@@@@@ */
+ /* ! @@@@@@@@@@@@@@@@@@@@@ header/ hero section styling @@@@@@@@@@@@@@@@@ */
+ /* ! @@@@@@@@@@@@@@@@@@@@@ header/ hero section styling @@@@@@@@@@@@@@@@@ */
+ /* header is under the nav-bar */
+ /* we have to push the header down equal to height of the nav-bar */
+ 
+ header{
+     /* border: 5px solid red; */
+     position: relative;
+     top: 8rem;
+     height: 70vh;
+     overflow: hidden;
+ }
+ .header__container{
+     /* border: 2px solid green; */
+     height: 100%;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     gap: 2rem;
+     align-content: center;
+     justify-content: center;
+     align-items: center;
+     
+     
+ }
+ .header__left{
+     /* border: 3px solid gainsboro; */
+     align-self: center;
+     
+ }
+ .header__left p{
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+ }
+ 
+ .header__right{
+     border: none;
+     /* border: 2px solid deeppink; */
+ }
+ 
+ 
+ /*! @@@@@@@@@@@@@@@@@@@@@@@@@@@@ categories section @@@@@@@@@@@@@@@@@@@@@@@@@ */
+ /*! @@@@@@@@@@@@@@@@@@@@@@@@@@@@ categories section @@@@@@@@@@@@@@@@@@@@@@@@@ */
+ /*! @@@@@@@@@@@@@@@@@@@@@@@@@@@@ categories section @@@@@@@@@@@@@@@@@@@@@@@@@ */
+ /*! @@@@@@@@@@@@@@@@@@@@@@@@@@@@ categories section @@@@@@@@@@@@@@@@@@@@@@@@@ */
+ .categories{
+     /* border: 5px solid gold; */
+     margin-top: 10rem;
+     background: var(--bg1-color);
+     height: 46rem;
+ }
+ .categories__container{
+     /* border: 2px solid white; */
+ display: grid;
+ grid-template-columns: 1fr 2fr;
+ gap: 2rem;
+ }
+ 
+ .categories__left{
+     border: none;
+     /* border: 2px solid hotpink; */
+ }
+ .categories__left h1{
+   text-align: left;
+ }
+ .categories__left p{
+     margin-top: 2rem;
+     margin-bottom: 2rem;
+     text-align: justify;
+ }
+ 
+ .categories__rigt{
+     /* border:2px solid darkcyan; */
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 1rem;
+ }
+ .categories__item{
+     /* border: 2px solid green; */
+     height: fit-content;
+     padding:2rem ;
+     border-radius: 3.2rem;
+     background: var(--bg2-color);
+     transition: var(--transition);
+   
+ 
+ }
+ .categories__item:hover{
+     box-shadow: 0 48px 48px rgba(0, 0, 0, 0.3);
+     z-index: 1;
+ }
+ .categories__item h5{
+    margin: 1.5rem 0 1rem 0;
+ }
+ .categories__item p{
+     margin-top: 0;
+     margin-bottom: 0;
+ }
+ .categories__item i{
+   background: var(--primary-color);
+   padding: 1rem;
+   border-radius: 0.8rem;
+ }
+ 
+ .categories__rigt .categories__item:nth-child(2) i{
+     background: var(--danger-color);
+ }
+ .categories__rigt .categories__item:nth-child(3) i{
+     background: var(--success-color);
+ }
+
+ .categories__rigt .categories__item:nth-child(4) i{
+     background: var(--warning-color);
+ }
+ .categories__rigt .categories__item:nth-child(5) i{
+     background: var(--success-color);
+ }
+ 
+ 
+ 
+ /* !@@@@@@@@@@@@@@@@@@@@@@@@@@@ courses section @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@@@@@@@ courses section @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@@@@@@@ courses section @@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+ /* !@@@@@@@@@@@@@@@@@@@@@@@@@@@ courses section @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+ .courses{
+     /* border: 5px solid red; */
+     margin-top: 6rem;
+ }
+ 
+ .courses__container{
+     /* border: 3px solid green; */
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 1rem;
+ }
+ .course__item{
+     background: var(--bg1-color);
+     margin: 1rem;
+     border: 1px solid transparent;
+     /* border: 2px solid red; */
+     text-align: center;
+     transition: var(--transition);
+  
+ }
+ .course__item:hover{
+     background: transparent;
+    border-color: var(--primary-color);
+    box-shadow: 0 48px 48px rgba(0, 0, 0, 0.3);
+ }
+ .course__item h4,p{
+     margin: 0 0 2rem 0;
+   
+ }
+ .course__item h4{
+     text-transform: capitalize;
+    
+ }
+ .courseItem__bottom{
+     padding:  2rem;
+ }
+ 
+ 
+ 
+ /* ! @@@@@@@@@@@@@@@@@@@@@@@@@@@ Q/A section @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* ! @@@@@@@@@@@@@@@@@@@@@@@@@@@ Q/A section @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* ! @@@@@@@@@@@@@@@@@@@@@@@@@@@ Q/A section @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* ! @@@@@@@@@@@@@@@@@@@@@@@@@@@ Q/A section @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+ .faqs{
+     /* border: 5px solid red; */
+     background: var(--bg1-color);
+     box-shadow:inset 0 0 48px rgba(0, 0, 0, 0.5);
+ }
+ .faqs h2{
+     margin-bottom: 4.5rem;
+ }
+ .faqs__container{
+     /* border: 2px solid crimson; */
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     gap: 1rem;
+ 
+ }
+ .faq{
+     /* border: 2px solid green; */
+     height: fit-content;
+     background: var(--primary-color);
+     display: flex;
+     gap: 2rem;
+     align-items: flex-start;
+     padding: 3.2rem 4rem 2.2rem 4rem; 
+     cursor: pointer;
+     /* box-shadow:0 48px 48px rgba(0, 0, 0, 0.3) ; */
+ 
+ }
+ .faq__icon{
+ font-size: 2rem;
+ }
+ .faq h6{
+     line-height: 1.4;
+     margin-top: 0;
+ }
+ .faq p{
+     display: none ;
+     margin-bottom: 0;
+     margin-top: 1rem;
+ }
+ /* todo: js event for the Answer of the question */
+ .faq.faq__open p{ 
+     display: block ;
+ }
+ 
+ 
+ 
+ /* !@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ testi monials @@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ testi monials @@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ testi monials @@@@@@@@@@@@@@@@@@@@@@@*/
+ /* !@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ testi monials @@@@@@@@@@@@@@@@@@@@@@@*/
+ .mySwiper{
+     /* border: 5px solid greenyellow; */
+     overflow-x: hidden;
+     margin-bottom: 2rem;
+     position: relative;
+ }
+
+ .swiper-wrapper{
+    row-gap: 0;
+    align-items: flex-start;
+ }
+ .swiper-wrapper{
+     height: fit-content !important;
+ }
+ .swiper-slide{
+     /* border: 2px solid red; */
+     padding-top: 2rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ .testimonial__avater{
+ 
+     width: 9.6rem;
+     height:9.6rem;
+     border-radius: 50%;
+     overflow: hidden;
+     
+ }
+ .testimonial__avater img{
+     border-radius: 50%;
+     border: 1.6rem solid var(--bg1-color);
+    
+ }
+ .testimonial__info{
+     text-align: center;
+     margin-top: 1rem;
+ }
+ .testimonial__info p{
+     margin-top: 0;
+    
+ }
+ .testimonial__body{
+     background: var(--primary-color);
+     padding: 3rem;
+     margin-top: 5rem;
+     position: relative;
+ }
+ .testimonial__body::before{
+     content: "";
+     display: block;
+     height: 4.8rem;
+     width: 4.8rem;
+     background: var(--primary-color);
+     position: absolute;
+     top: -2.45rem;
+     left: 46%;
+     transform: translateX(-50%);
+     transform: rotate(-46deg);
+ }
+ .testimonial__body p{
+     margin-bottom: 0;
+ }
+ 
+ 
+ /* !@@@@@@@@@@@@@@@@@@@@@@@@ Footer Section @@@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@@@@ Footer Section @@@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@@@@ Footer Section @@@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@@@@ Footer Section @@@@@@@@@@@@@@@@@@@@@@@@@ */
+ 
+ .footer{
+     /* border: 5px solid hotpink; */
+     background: var(--bg1-color);
+     padding-top: 6rem;
+ }
+ .footer__container{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+    column-gap: 2rem;
+   
+ }
+ .footer__item{
+     border: none;
+     /* border: 2px solid gold; */
+ }
+ .footer__item li{
+   margin: 1rem 0;
+ }
+ .footer__item h3{
+   margin: 2rem 0;
+ }
+.footer__4 p{
+    margin-bottom: 1rem;
+   
+}
+ .footer__socials{
+ display: flex;
+ justify-content: flex-start;
+ gap:2rem;
+ }
+ .footer__socials a{
+     font-size: 2.5rem;
+ }
+ .footer ul li a:hover{
+     text-decoration: underline;
+
+ }
+ .footer__bottom{
+     text-align: center;
+     margin-top: 4rem;
+     padding: 1rem;
+     border-top: 1px solid var(--bg2-color);   
+ }
+
+ /* !@@@@@@@@@@@@@@@@@@@@@ Adding the media quries @@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@ Adding the media quries @@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@ Adding the media quries @@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@ Adding the media quries @@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@ Adding the media quries @@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@ Adding the media quries @@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@ Adding the media quries @@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* !@@@@@@@@@@@@@@@@@@@@@ Adding the media quries @@@@@@@@@@@@@@@@@@@@@@@@ */
+ 
+
+
+
+
+
+/* * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Tablet version @@@@@@@@@@@@@@@@@@@@@@@ */
+/* * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Tablet version @@@@@@@@@@@@@@@@@@@@@@@ */
+/* * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Tablet version @@@@@@@@@@@@@@@@@@@@@@@ */
+/* * @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Tablet version @@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
+ 
+ @media (max-width:1024px){
+   h1{
+       font-size: 2.8rem;
+   }
+   h2{
+       font-size: 2.4rem;
+   }
+   h3{
+       font-size: 2rem;
+   }
+   h4{
+       font-size: 1.8rem;
+   }
+   h5{
+       font-size: 1.6rem;
+   }
+  h6{
+     font-size: 1.4rem;
+  }
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@ navigarion bar @@@@@@@@@@@@@@@@@@@@@@@*/
+/* @@@@@@@@@@@@@@@@@@@@@@ navigarion bar @@@@@@@@@@@@@@@@@@@@@@@*/
+
+.nav-bar button {
+    display: inline-block;
+    background: transparent;
+    color: var(--white-color);
+    font-size: 2.5rem;
+    cursor: pointer;
+   
+}
+.nav-bar button.close-menu-button{
+    font-size: 2.8rem;
+    display: none;
+}
+.nav__menu{
+    position: fixed;
+    top: 8rem;
+    right: 5%;
+    /* background: red; */
+    height: fit-content;
+    width: 30rem;
+    flex-direction: column;
+    gap: 0;
+/* for setting the js event */
+display: none;
+}
+
+
+.nav__menu li{
+    /* border: 1px solid green; */
+   height: 8rem ;
+   width: 100%;
+   /* transform: translateZ(0); */
+   opacity: 0;
+   animation:  animateNavbar 400ms linear  forwards;
+   transform-origin: top right;
+}
+.nav__menu li:nth-child(2){
+    animation-delay: 200ms;
+}
+.nav__menu li:nth-child(3){
+    animation-delay: 400ms;
+}
+.nav__menu li:nth-child(4){
+    animation-delay: 600ms;
+}
+@keyframes animateNavbar {
+    0%{
+        transform:rotateZ(-90deg) rotateX(90deg) scale(0.1);
+        opacity: 0;
+    }
+    100%{
+        transform:rotateZ(0) rotateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.nav__menu li a{
+    height: 100%;
+    width: 100%;
+    background: var(--primary-color);
+    box-shadow: -64px 96px 160px rgba(0, 0, 0, 0.8);
+    display: grid;
+   place-items: center;
+}
+
+.nav__menu li a:hover{
+    background: var(--bg2-color);
+    color: var(--white-color);
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@ Header section @@@@@@@@@@@@@@@@@@@@@@@*/
+/* @@@@@@@@@@@@@@@@@@@@@@ Header section @@@@@@@@@@@@@@@@@@@@@@@*/
+header{
+    height: 55vh;
+    margin-bottom: 6.5rem;
+}
+.header__container{
+    padding: 3rem 0;
+    gap: 1rem;
+    
+}
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@ categories section @@@@@@@@@@@@@@@@@@@@@@@*/
+/* @@@@@@@@@@@@@@@@@@@@@@ categories section @@@@@@@@@@@@@@@@@@@@@@@*/
+.categories{
+    margin-top: 0;
+    height: fit-content;
+    height: auto;
+}
+.categories__container{
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    }
+    .categories__left p{
+    margin: 2rem 0;
+    text-align: justify;
+    }
+    .categories__left h1{
+     margin-bottom: 0;
+    }
+    .categories__rigt{
+        gap: 2rem;
+    }
+  
+
+/* @@@@@@@@@@@@@@@@@@@@@@ course @@@@@@@@@@@@@@@@@@@@@@@*/
+/* @@@@@@@@@@@@@@@@@@@@@@ course @@@@@@@@@@@@@@@@@@@@@@@*/
+    .courses{
+      margin-top: 0;
+    }
+    .courses__container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+/* @@@@@@@@@@@@@@@@@@@@@@ frequently asked question @@@@@@@@@@@@@@@@@@@@@@@*/
+/* @@@@@@@@@@@@@@@@@@@@@@  frequently asked question @@@@@@@@@@@@@@@@@@@@@@@*/
+    .faqs__container{
+        grid-template-columns: 1fr;
+    }
+/* @@@@@@@@@@@@@@@@@@@@@@ footer @@@@@@@@@@@@@@@@@@@@@@@*/
+/* @@@@@@@@@@@@@@@@@@@@@@ footer @@@@@@@@@@@@@@@@@@@@@@@*/
+    .footer__container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem 4rem;
+    }
+    }
+ 
+/* * @@@@@@@@@@@@@@@@@@@@@@@@ tablet version 2 @@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* * @@@@@@@@@@@@@@@@@@@@@@@@ tablet version 2 @@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* * @@@@@@@@@@@@@@@@@@@@@@@@ tablet version 2 @@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* * @@@@@@@@@@@@@@@@@@@@@@@@ tablet version 2 @@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+@media screen  and (max-width:768px){
+  
+    header{
+        height: 70vh;
+    }
+    .header__container{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        padding: 3rem 0;
+    }
+
+    .header__left{
+        text-align: center;
+        
+    }
+ /* @@@@@@@@@@@@@@@@@@@@@@ categories @@@@@@@@@@@@@@@@@@@@@@@*/
+.categories__rigt{
+    gap: 1rem;
+}
+.categories__item h4{
+    margin: 1rem 0;
+ }
+/* @@@@@@@@@@@@@@@@@@@@@@ popular corses section @@@@@@@@@@@@@@@@@@@@@@@*/
+.courses__container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.course__item{
+    margin: 0;
+}
+   }
+
+
+/* * @@@@@@@@@@@@@@@@@@@@@@@ mobile version @@@@@@@@@@@@@@@@@@@@@@@@ */
+/* * @@@@@@@@@@@@@@@@@@@@@@@ mobile version  @@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* * @@@@@@@@@@@@@@@@@@@@@@@ mobile version  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* * @@@@@@@@@@@@@@@@@@@@@@@ mobile version  @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+@media screen and (max-width:600px) {
+.container{
+    width: 95%;
+}
+.nav__menu{
+    right: 2.5%;
+}
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@ header @@@@@@@@@@@@@@@@@@@@@@@ */
+    header{
+        height: 90vh;
+    }
+    .header__container{
+        padding: 0;
+    }
+      /* @@@@@@@@@@@@@@@@@@@@@@@@@ categories section @@@@@@@@@@@@@@@@@@@@@@@ */ 
+      .categories__rigt{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+    .categories__item{
+        padding:1rem 1rem ;
+        border-radius: 1rem;
+    }
+     /* @@@@@@@@@@@@@@@@@@@@@@@@@ popular corses @@@@@@@@@@@@@@@@@@@@@@@ */ 
+
+     .courses__container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@ footer section  @@@@@@@@@@@@@@@@@@@@@@@ */    
+    .footer__container{
+        grid-template-columns: 1fr;
+        place-items: center;
+        gap: 2rem;
+    }
+    .footer__item{
+        /* border: 2px solid red; */
+        text-align: center;
+    } 
+      .footer__socials{
+        justify-content: center;
+        }
+}
+
+
+
+
+/* end of the home page */
